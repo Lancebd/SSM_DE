@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chikitbd.dao.TestMMapper">
+	<!-- 
+		根据id查询得到一个user对象
+	 -->
+	 <select id="getTestM"  parameterType="int" resultType="com.chikitbd.model.TestM">
+	 	select * from TestM where id=#{id}
+	 </select>
+</mapper>
